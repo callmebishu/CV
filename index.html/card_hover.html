@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card hover</title>
+    <style>
+        .card img{
+        max-width: 100%;
+        max-height: 100%;
+        filter:grayscale(1);
+    }   
+    .container{
+        display: flex;
+        height: 500px;
+    }
+    .card{
+        flex: 1;
+        overflow: hidden;
+    }
+    .card img{
+        object-fit:cover;
+        
+    }
+    .card:hover{
+        flex:2;
+        flex-direction:row;
+    }
+    .card:hover img{
+        filter: none;
+        height: 400px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="mypic1.jpeg" alt="">
+        </div>
+        <div class="card">
+            <img src="mypic2.jpeg" alt="">
+        </div>
+        <div class="card">
+            <img src="mypic3.jpeg" alt="">
+        </div>
+        <div class="card">
+            <img src="mypic4.jpeg" alt="">
+        </div>
+    </div>
+</body>
+</html>
